@@ -1,0 +1,10 @@
+p {
+  font-size: 4rem;
+  color: #61dafb;
+  font-weight: bold;
+  background: rgb(0, 0, 0);
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 5px rgba(239, 239, 239, 0.8);
+  text-align: center;
+}
