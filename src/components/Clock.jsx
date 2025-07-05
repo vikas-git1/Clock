@@ -25,14 +25,14 @@ const Clock = () => {
     return () => clearInterval(updateClock);
   }, []);
 
-  //   const hour12Format = time.hour % 12 || 12; // Convert to 12-hour format
+  const hour12Format = time.hour % 12 || 12; // Convert to 12-hour format
   const period = time.hour >= 12 ? "PM" : "AM"; // Determine AM/PM
 
   return (
     <div>
       <p>
-        {/* {hour12Format.toString().padStart(2, "0")} :{" "} */}
-        {time.hour.toString().padStart(2, "0")} :{" "}
+        {hour12Format.toString().padStart(2, "0")} :{" "}
+        {/* {time.hour.toString().padStart(2, "0")} :{" "} */}
         {time.minute.toString().padStart(2, "0")} :{" "}
         {time.seconds.toString().padStart(2, "0")} {period}
       </p>
